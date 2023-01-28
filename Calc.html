@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <table>
+        <tr>
+            <td>Enter a number :</td>
+            <td><input type="text" name="" id="a"></td>
+        </tr>
+        <tr>
+            <td>Enter a number :</td>
+            <td><input type="text" name="" id="b"></td>
+        </tr>
+        
+    </table>
+    <button onclick="func1()">+</button>
+    <button onclick="func2()">-</button>
+    <button onclick="func3()">*</button>
+    <button onclick="func4()">/</button>
+    <button onclick="func5()">%</button>
+    <p id="abc"></p>
+</body>
+<script>
+    function func1()
+    {
+        var a = parseInt(document.getElementById("a").value)
+        var b = parseInt(document.getElementById("b").value)
+        var c =a+b
+        document.getElementById("abc").innerHTML= "The sum "+a+" and "+b+" is " +c;
+    }
+    function func2()
+    {
+        var a = parseInt(document.getElementById("a").value)
+        var b = parseInt(document.getElementById("b").value)
+        var c =a-b
+        document.getElementById("abc").innerHTML= "The difference "+a+" and "+b+" is " +c;
+    }
+    function func3()
+    {
+        var a = parseInt(document.getElementById("a").value)
+        var b = parseInt(document.getElementById("b").value)
+        var c =a*b
+        document.getElementById("abc").innerHTML= "The product "+a+" and "+b+" is " +c;
+    }
+    function func4()
+    {
+        var a = parseInt(document.getElementById("a").value)
+        var b = parseInt(document.getElementById("b").value)
+        var c =a/b
+        document.getElementById("abc").innerHTML= "The division of "+a+" and "+b+" is " +c;
+    }
+    function func5()
+    {
+        var a = parseInt(document.getElementById("a").value)
+        var b = parseInt(document.getElementById("b").value)
+        var c =a%b
+        document.getElementById("abc").innerHTML= "The modulo of "+a+" and "+b+" is " +c;
+    }
+</script>
+</html>
